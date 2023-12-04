@@ -93,6 +93,7 @@ while (true)
             Console.WriteLine("Pobjeda!");
             battles++;
             Datastore.Hero.Win();
+            Datastore.Hero.HealthPoints += Datastore.Hero.MaxHealthPoints / 4;
             Console.WriteLine($"XP: {Datastore.Hero.Experience}/100");
             Console.WriteLine("Potrošite pola XP-a za full heal (1 - Da, 2 - Ne)");
             var heal = Console.ReadLine();
